@@ -18,6 +18,18 @@
     <link rel="stylesheet" href="../assets/css/xenon-skins.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <script src="../assets/js/jquery-1.11.1.min.js"></script>
+	
+	<script type="text/javascript">
+		function research(){
+            var search_txt = document.getElementById("search-bar-input").value;
+            if (search_txt == "") {
+                alert("关键词不能为空! ");
+                return false;
+            }
+            var search_url = "http://www.suiyuanka.com/?q=" + search_txt;
+            window.open(search_url);
+		}
+	</script>	
 
 </head>
 
@@ -171,6 +183,24 @@
                 <a href="https://github.com/jianrry/link" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
             </nav>
+			
+			<!-- Research Start-->
+			<div class="row">
+			
+				<div class="col-sm-4"></div>
+			
+				<div class="input-group col-md-4" style="margin-top:0px positon:relative">
+					<input type="text" class="form-control" placeholder="请输入搜索的关键字" id="search-bar-input" / >
+				
+					<span class="input-group-btn">
+						<button class="btn btn-info btn-search" onclick="research()">搜索</button>
+					</span>
+				</div>
+
+				<div class="col-sm-4"></div>
+
+			</div>
+			<!-- Research End-->
 
             <!-- 新闻资讯 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="新闻资讯"></i>新闻资讯</h4>

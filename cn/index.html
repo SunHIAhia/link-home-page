@@ -249,11 +249,16 @@
 			<!-- 天气预报 Start-->
 			<div class="row">
 			
-				<div class="col-sm-12">
+				<div class="col-sm-4">
 				
 					<iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tx&skin=pitaya" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe>
+					<!-- <div id="he-plugin-simple"></div> -->
 				
 				</div>
+
+			</div>
+			
+			<div class="row">
 
 			</div>
 			<!-- 天气预报 End-->
@@ -1782,6 +1787,31 @@
         pos = $(href).position().top - 30;
     });
     </script>
+	
+	<script>
+	WIDGET = {
+	  CONFIG: {
+		"modules": "12034",
+		"background": 5,
+		"tmpColor": "4A4A4A",
+		"tmpSize": 16,
+		"cityColor": "4A4A4A",
+		"citySize": 16,
+		"aqiSize": 16,
+		"weatherIconSize": 24,
+		"alertIconSize": 18,
+		"padding": "10px 10px 10px 10px",
+		"shadow": "1",
+		"language": "auto",
+		"borderRadius": 5,
+		"fixed": "false",
+		"vertical": "middle",
+		"horizontal": "left",
+		"key": "9aa7e906b3534cf78dc28afcfd22fe4c"
+	  }
+	}
+	</script>
+	<script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
 
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/TweenMax.min.js"></script>

@@ -29,7 +29,22 @@
             var search_url = "http://www.suiyuanka.com:88/?q=" + search_txt;
             window.open(search_url);
 		}
-	</script>
+    </script>
+    
+    <script type="text/javascript">
+        function onKeyDown(event){
+            var e = event || window.event || arguments.callee.caller.arguments[0]; 
+                // enter 键         
+                if(e && e.keyCode==13){ 
+                    research();
+                }
+                // Esc 键         
+                if(e && e.keyCode==27){ 
+                    $('#search-bar-input').val('')
+                }
+                        
+        }             
+    </script> 
 
 </head>
 
@@ -270,7 +285,7 @@
 			
 				<div class="input-group input-group-lg col-md-4" style="margin-top:0px positon:relative">
 					
-					<input type="text" class="form-control" placeholder="请输入搜索的关键字" id="search-bar-input" / >
+					<input type="text" class="form-control" placeholder="请输入搜索的关键字" id="search-bar-input" onkeydown="onKeyDown(event)" / >
 				
 					<span class="input-group-btn">
 						<button class="btn btn-info btn-search" onclick="research()">

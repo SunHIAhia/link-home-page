@@ -9,7 +9,7 @@
     <meta name="keywords" content="#">
     <meta name="description" content="#">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/arimo.css">
+    <link rel="stylesheet" href="assets/css/fonts/arimo.css">
     <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -24,6 +24,24 @@
 
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="assets/js/index.js"></script>
+
+    <!-- service worker -->
+    <script>
+        // 判断浏览器是否支持 Service Worker
+        if ('serviceWorker' in navigator) {
+            // 在 load 事件触发后注册 Service Worker，确保 Service Worker 的注册不会影响首屏速度
+            window.addEventListener('load', function () {
+                // 注册 Service Worker
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                // 注册成功
+                console.log('ServiceWorker registration successful with scope: ', registration.scope)
+                }).catch(function (err) {
+                // 注册失败 :(
+                console.warn('ServiceWorker registration failed: ', err)
+                })
+            })
+        }
+    </script>
     
 
 </head>
@@ -253,9 +271,6 @@
 
 			</div>
 			
-			<div class="row">
-
-			</div>
 			<!-- 天气预报 End-->
 			
 			<!-- Research Start-->
@@ -1662,11 +1677,11 @@
                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
-                                <img src="assets/images/logos/jianrry's.png" class="img-circle" width="40">
+                                <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
                             </a>
                             <div class="xe-comment">
                                 <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Jianrry's</strong>
+                                    <strong>jianrry's</strong>
                                 </a>
                                 <p class="overflowClip_2">不忘初心，方得始终。</p>
                             </div>
@@ -1678,11 +1693,11 @@
                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://im.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://im.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
-                                <img src="assets/images/logos/jianrry's.png" class="img-circle" width="40">
+                                <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
                             </a>
                             <div class="xe-comment">
                                 <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong>Jianrry's</strong>
+                                    <strong>jianrry's</strong>
                                 </a>
                                 <p class="overflowClip_2">我的外语博客.</p>
                             </div>
@@ -1694,7 +1709,7 @@
                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://linux.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://linux.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
-                                <img src="assets/images/logos/jianrry's.png" class="img-circle" width="40">
+                                <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
                             </a>
                             <div class="xe-comment">
                                 <a href="#" class="xe-user-name overflowClip_1">
@@ -1710,7 +1725,7 @@
                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://drive.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://drive.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
-                                <img src="assets/images/logos/jianrry's.png" class="img-circle" width="40">
+                                <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
                             </a>
                             <div class="xe-comment">
                                 <a href="#" class="xe-user-name overflowClip_1">
@@ -1730,7 +1745,7 @@
                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://proxy.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://proxy.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
-                                <img src="assets/images/logos/jianrry's.png" class="img-circle" width="40">
+                                <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
                             </a>
                             <div class="xe-comment">
                                 <a href="#" class="xe-user-name overflowClip_1">
@@ -1845,8 +1860,9 @@
 		"key": "9aa7e906b3534cf78dc28afcfd22fe4c"
 	  }
 	}
-	</script>
-	<script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+    </script>
+    
+	<!-- <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script> -->
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>

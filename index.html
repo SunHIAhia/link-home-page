@@ -33,16 +33,16 @@
             window.addEventListener('load', function () {
                 // 注册 Service Worker
                 navigator.serviceWorker.register('/sw.js').then(function (registration) {
-                // 注册成功
-                console.log('ServiceWorker registration successful with scope: ', registration.scope)
+                    // 注册成功
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope)
                 }).catch(function (err) {
-                // 注册失败 :(
-                console.warn('ServiceWorker registration failed: ', err)
+                    // 注册失败 :(
+                    console.warn('ServiceWorker registration failed: ', err)
                 })
             })
         }
     </script>
-    
+
 
 </head>
 
@@ -95,19 +95,19 @@
                                     <span class="title">谷歌系列</span>
                                 </a>
                             </li>
-							
+
                             <li>
                                 <a href="#开发者工具" class="smooth">
                                     <span class="title">开发者工具</span>
                                 </a>
                             </li>
-							
-							<li>
+
+                            <li>
                                 <a href="#其他工具" class="smooth">
                                     <span class="title">其他工具</span>
                                 </a>
                             </li>
-							
+
                             <li>
                                 <a href="#百科全书" class="smooth">
                                     <span class="title">百科全书</span>
@@ -117,7 +117,7 @@
                         </ul>
 
                     </li>
-					
+
                     <li>
                         <a>
                             <i class="linecons-star"></i>
@@ -125,29 +125,29 @@
                         </a>
 
                         <ul>
-						
+
                             <li>
                                 <a href="#域名注册" class="smooth">
                                     <span class="title">域名注册</span>
                                 </a>
                             </li>
-							
-							<li>
+
+                            <li>
                                 <a href="#域名解析" class="smooth">
                                     <span class="title">域名解析</span>
                                 </a>
                             </li>
-							
-							<li>
+
+                            <li>
                                 <a href="#服务器" class="smooth">
                                     <span class="title">服务器</span>
                                 </a>
                             </li>
-							
+
                         </ul>
 
                     </li>
-					
+
                     <li>
                         <a>
                             <i class="linecons-star"></i>
@@ -155,19 +155,19 @@
                         </a>
 
                         <ul>
-						
+
                             <li>
                                 <a href="#慕课平台" class="smooth">
                                     <span class="title">慕课平台</span>
                                 </a>
                             </li>
-							
+
                             <li>
                                 <a href="#自学网站" class="smooth">
                                     <span class="title">自学网站</span>
                                 </a>
                             </li>
-							
+
                             <li>
                                 <a href="#日语学习" class="smooth">
                                     <span class="title">日语学习</span>
@@ -191,8 +191,8 @@
                             <span class="title">网页游戏</span>
                         </a>
                     </li>
-					
-					<li>
+
+                    <li>
                         <a href="#社区论坛" class="smooth">
                             <i class="linecons-star"></i>
                             <span class="title">社区论坛</span>
@@ -255,45 +255,49 @@
                     </li>
                 </ul>
 
-                <a href="https://github.com/jianrry/link.jianrry.com" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="assets/images/forkme.png" alt="Fork me on GitHub"></a>
+                <a href="https://github.com/jianrry/link.jianrry.com" target="_blank"><img
+                        style="position: absolute; top: 0; right: 0; border: 0;" src="assets/images/forkme.png"
+                        alt="Fork me on GitHub"></a>
 
             </nav>
-			
-			<!-- 天气预报 Start-->
-			<div class="row">
-			
-				<div class="col-sm-4">
-				
-					<iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tx&skin=pitaya" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe>
-					<!-- <div id="he-plugin-simple"></div> -->
-				
-				</div>
 
-			</div>
-			
-			<!-- 天气预报 End-->
-			
-			<!-- Research Start-->
-			<div class="row">
-			
-				<div class="col-sm-4"></div>
-			
-				<div class="input-group input-group-lg col-md-4" style="margin-top:0px positon:relative">
-					
-					<input type="text" class="form-control" placeholder="请输入搜索的关键字" id="search-bar-input" onkeydown="onKeyDown(event)" / >
-				
-					<span class="input-group-btn">
-						<button class="btn btn-info btn-search" onclick="research()">
-							<span class="glyphicon glyphicon-search"></span> 
-						</button>
-					</span>
-					
-				</div>
+            <!-- 天气预报 Start-->
+            <div class="row">
 
-				<div class="col-sm-4"></div>
+                <div class="col-sm-4">
 
-			</div>
-			<!-- Research End-->
+                    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tx&skin=pitaya" frameborder="0"
+                        width="100%" height="30" allowtransparency="true"></iframe>
+                    <!-- <div id="he-plugin-simple"></div> -->
+
+                </div>
+
+            </div>
+
+            <!-- 天气预报 End-->
+
+            <!-- Research Start-->
+            <div class="row">
+
+                <div class="col-sm-4"></div>
+
+                <div class="input-group input-group-lg col-md-4" style="margin-top:0px positon:relative">
+
+                    <input type="text" class="form-control" placeholder="请输入搜索的关键字" id="search-bar-input"
+                        onkeydown="onKeyDown(event)" />
+
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-search" onclick="research()">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+
+                </div>
+
+                <div class="col-sm-4"></div>
+
+            </div>
+            <!-- Research End-->
 
             <!-- 新闻资讯 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="新闻资讯"></i>新闻资讯</h4>
@@ -301,7 +305,9 @@
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://tophub.today/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://tophub.today/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://tophub.today/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://tophub.today/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/tophub.png" class="img-circle" width="40">
@@ -311,13 +317,15 @@
                                     <strong>今日热榜</strong>
                                 </a>
                                 <p class="overflowClip_2">聚合多个站点的热点新闻，可自由订阅节点。</p>
-                             </div>
-                          </div>
-                      </div>
-                   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://dwz.cn/nsluCJG0', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.iqiyi.com/a_19rrgudwd1.html">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://dwz.cn/nsluCJG0', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://www.iqiyi.com/a_19rrgudwd1.html">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/magazinechina.png" class="img-circle" width="40">
@@ -333,7 +341,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://github.com/ruanyf/weekly/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://github.com/ruanyf/weekly/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://github.com/ruanyf/weekly/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://github.com/ruanyf/weekly/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -349,7 +359,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://hellogithub.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://hellogithub.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://hellogithub.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://hellogithub.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -365,7 +377,7 @@
                 </div>
 
             </div>
-	        <!-- 新闻资讯 End-->
+            <!-- 新闻资讯 End-->
 
             <!-- 搜索引擎 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="搜索引擎"></i>搜索引擎</h4>
@@ -373,7 +385,9 @@
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://owllook2.yueing.org/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://owllook2.yueing.org/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://owllook2.yueing.org/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://owllook2.yueing.org/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/owllook.png" class="img-circle" width="40">
@@ -389,7 +403,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.zqbook.top/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.zqbook.top/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.zqbook.top/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.zqbook.top/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/zqbook.png" class="img-circle" width="40">
@@ -403,9 +419,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.cupfox.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.cupfox.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.cupfox.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.cupfox.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/cupfox.png" class="img-circle" width="40">
@@ -419,9 +437,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://www.pansou.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.pansou.com">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://www.pansou.com', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://www.pansou.com">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/pansou.png" class="img-circle" width="40">
@@ -437,11 +457,13 @@
                 </div>
 
             </div>
-			
+
             <div class="row">
-			
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://chazhongzi01.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://chazhongzi01.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://chazhongzi01.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://chazhongzi01.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/chazhongzi.png" class="img-circle" width="40">
@@ -457,7 +479,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://pkgs.org/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://pkgs.org/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://pkgs.org/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://pkgs.org/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/archwiki.png" class="img-circle" width="40">
@@ -473,7 +497,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://i18ns.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://i18ns.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://i18ns.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://i18ns.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -487,9 +513,9 @@
                         </div>
                     </div>
                 </div>
-			
-            </div>			
-	        <!-- 搜索引擎 End-->
+
+            </div>
+            <!-- 搜索引擎 End-->
 
             <!-- 谷歌系列 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="谷歌系列"></i>谷歌系列</h4>
@@ -497,7 +523,9 @@
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.google.cn/chrome/index.html', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.google.cn/chrome/index.html">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.google.cn/chrome/index.html', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.google.cn/chrome/index.html">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/chrome.png" class="img-circle" width="40">
@@ -513,7 +541,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://translate.google.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://translate.google.cn/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://translate.google.cn/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://translate.google.cn/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/google-translate.png" class="img-circle" width="40">
@@ -529,7 +559,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://squoosh.app/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://squoosh.app/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://squoosh.app/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://squoosh.app/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/squoosh.png" class="img-circle" width="40">
@@ -546,7 +578,9 @@
 
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://photos.google.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://photos.google.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://photos.google.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://photos.google.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/google-photos.png" class="img-circle" width="40">
@@ -566,7 +600,9 @@
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.google.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.google.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.google.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.google.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/google.png" class="img-circle" width="40">
@@ -582,7 +618,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://mail.google.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://mail.google.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://mail.google.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://mail.google.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/gmail.png" class="img-circle" width="40">
@@ -598,7 +636,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://drive.google.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://drive.google.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://drive.google.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://drive.google.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/google-drive.png" class="img-circle" width="40">
@@ -614,7 +654,10 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://analytics.google.com/analytics/web/?hl=zh-TW', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://analytics.google.com/analytics/web/?hl=zh-TW">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://analytics.google.com/analytics/web/?hl=zh-TW', '_blank')"
+                        data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="https://analytics.google.com/analytics/web/?hl=zh-TW">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/google-analytics.png" class="img-circle" width="40">
@@ -633,9 +676,11 @@
             </div>
 
             <div class="row">
-			
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://keep.google.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://keep.google.com">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://keep.google.com', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://keep.google.com">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/google-keep.png" class="img-circle" width="40">
@@ -651,7 +696,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.crx4chrome.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.crx4chrome.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.crx4chrome.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.crx4chrome.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/crx4chrome.png" class="img-circle" width="40">
@@ -667,7 +714,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://apkpure.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://apkpure.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://apkpure.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://apkpure.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/apkpure.png" class="img-circle" width="40">
@@ -684,15 +733,17 @@
 
 
             </div>
-	        <!-- 谷歌系列 End-->
-			
-		    <!-- 开发者工具 Start-->
-			<h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="开发者工具"></i>开发者工具</h4>
-			
-			<div class="row">
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://ping.pe/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://ping.pe/">
+            <!-- 谷歌系列 End-->
+
+            <!-- 开发者工具 Start-->
+            <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="开发者工具"></i>开发者工具</h4>
+
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://ping.pe/', '_blank')" data-toggle="tooltip" data-placement="bottom"
+                        title="" data-original-title="http://ping.pe/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/ping-pe.png" class="img-circle" width="40">
@@ -706,9 +757,11 @@
                         </div>
                     </div>
                 </div>
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://ping.chinaz.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://ping.chinaz.com">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://ping.chinaz.com', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://ping.chinaz.com">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/ping.png" class="img-circle" width="40">
@@ -722,9 +775,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://tools.ipip.net/traceroute.php', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://tools.ipip.net/traceroute.php">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://tools.ipip.net/traceroute.php', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://tools.ipip.net/traceroute.php">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/ipip.png" class="img-circle" width="40">
@@ -738,9 +793,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://freessl.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://freessl.cn/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://freessl.cn/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://freessl.cn/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/freessl.png" class="img-circle" width="40">
@@ -754,13 +811,15 @@
                         </div>
                     </div>
                 </div>
-				
+
             </div>
 
-			<div class="row">
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://ssl-config.mozilla.org/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://ssl-config.mozilla.org/">
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://ssl-config.mozilla.org/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://ssl-config.mozilla.org/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/mozilla.png" class="img-circle" width="40">
@@ -774,9 +833,11 @@
                         </div>
                     </div>
                 </div>
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://cdnjs.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://cdnjs.com/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://cdnjs.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://cdnjs.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -790,9 +851,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://mvnrepository.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://mvnrepository.com/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://mvnrepository.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://mvnrepository.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/mvnrepository.png" class="img-circle" width="40">
@@ -806,9 +869,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://msdn.itellyou.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://msdn.itellyou.cn/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://msdn.itellyou.cn/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://msdn.itellyou.cn/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/itellyou.png" class="img-circle" width="40">
@@ -822,13 +887,15 @@
                         </div>
                     </div>
                 </div>
-				
+
             </div>
 
-			<div class="row">
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://mirrors.ustc.edu.cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://mirrors.ustc.edu.cn/">
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://mirrors.ustc.edu.cn/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://mirrors.ustc.edu.cn/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -842,9 +909,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://opsx.alibaba.com/mirror', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://opsx.alibaba.com/mirror">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://opsx.alibaba.com/mirror', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://opsx.alibaba.com/mirror">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/opsx.png" class="img-circle" width="40">
@@ -858,9 +927,11 @@
                         </div>
                     </div>
                 </div>
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://npm.taobao.org/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://npm.taobao.org/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://npm.taobao.org/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://npm.taobao.org/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/taonpm.png" class="img-circle" width="40">
@@ -874,9 +945,33 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://mubu.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://mubu.com/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.osboxes.org/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.osboxes.org/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="assets/images/logos/osboxes.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>OSBoxes</strong>
+                                </a>
+                                <p class="overflowClip_2">免费下载VirtualBox & VMware的镜像文件。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://mubu.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://mubu.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/mubu.png" class="img-circle" width="40">
@@ -891,12 +986,10 @@
                     </div>
                 </div>
 
-			</div>
-			
-			<div class="row">
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://paste.ubuntu.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://paste.ubuntu.com/">
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://paste.ubuntu.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://paste.ubuntu.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/ubuntu.png" class="img-circle" width="40">
@@ -910,16 +1003,18 @@
                         </div>
                     </div>
                 </div>
-			
-			</div>
-			<!-- 开发者工具 End-->
-		
-		    <!-- 其他工具 Start-->
+
+            </div>
+            <!-- 开发者工具 End-->
+
+            <!-- 其他工具 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="其他工具"></i>其他工具</h4>
 
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://tool.imiku.me/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://tool.imiku.me/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://tool.imiku.me/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://tool.imiku.me/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -935,7 +1030,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://123apps.com/cn/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://123apps.com/cn/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://123apps.com/cn/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://123apps.com/cn/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/123apps.png" class="img-circle" width="40">
@@ -949,9 +1046,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://convertio.co/zh/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://convertio.co/zh/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://convertio.co/zh/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://convertio.co/zh/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/convertio.png" class="img-circle" width="40">
@@ -965,9 +1064,33 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://pan.baiduwp.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://pan.baiduwp.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://waifu2x.udp.jp/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://waifu2x.udp.jp/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="assets/images/logos/github.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>waifu2x</strong>
+                                </a>
+                                <p class="overflowClip_2">无损放大图片，最大放大2倍。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://pan.baiduwp.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://pan.baiduwp.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/baiduwp.png" class="img-circle" width="40">
@@ -981,13 +1104,11 @@
                         </div>
                     </div>
                 </div>
-				
-            </div>
-			
-			<div class="row">
-			
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://pnote.net/pan/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://pnote.net/pan/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://pnote.net/pan/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://pnote.net/pan/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -1001,9 +1122,11 @@
                         </div>
                     </div>
                 </div>
-			
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://send.firefox.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://send.firefox.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://send.firefox.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://send.firefox.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/firefox-send.png" class="img-circle" width="40">
@@ -1017,9 +1140,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://dropmail.me/zh/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://dropmail.me/zh/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://dropmail.me/zh/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://dropmail.me/zh/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/dropmail.png" class="img-circle" width="40">
@@ -1034,8 +1159,14 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div class="row">
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.fakenamegenerator.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.fakenamegenerator.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.fakenamegenerator.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.fakenamegenerator.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/fake-name-generator.png" class="img-circle" width="40">
@@ -1049,16 +1180,37 @@
                         </div>
                     </div>
                 </div>
-				
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://www.virscan.org/language/zh-cn/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://www.virscan.org/language/zh-cn/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="assets/images/logos/virscan.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>VirSCAN.org</strong>
+                                </a>
+                                <p class="overflowClip_2">多引擎在线病毒扫描网，当前支持 47 款杀毒引擎。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-	        <!-- 其他工具 End-->
-			
+            <!-- 其他工具 End-->
+
             <!-- 百科全书 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="百科全书"></i>百科全书</h4>
 
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://dwz.cn/HUU05Ear', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://wiki.archlinux.org/index.php/Main_page_(简体中文)">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://dwz.cn/HUU05Ear', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title=""
+                        data-original-title="https://wiki.archlinux.org/index.php/Main_page_(简体中文)">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/archwiki.png" class="img-circle" width="40">
@@ -1074,7 +1226,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://jikipedia.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://jikipedia.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://jikipedia.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://jikipedia.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/jikipedia.png" class="img-circle" width="40">
@@ -1088,9 +1242,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://zh.wikihow.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://zh.wikihow.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://zh.wikihow.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://zh.wikihow.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/wikihow.png" class="img-circle" width="40">
@@ -1106,7 +1262,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://zh.wikipedia.org/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://zh.wikipedia.org/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://zh.wikipedia.org/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://zh.wikipedia.org/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/Wikipedia.png" class="img-circle" width="40">
@@ -1122,15 +1280,17 @@
                 </div>
 
             </div>
-	        <!-- 百科全书 End-->
+            <!-- 百科全书 End-->
 
             <!-- 域名注册 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="域名注册"></i>域名注册</h4>
 
             <div class="row">
-			
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.namesilo.com/?rid=8d76430jj', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.namesilo.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.namesilo.com/?rid=8d76430jj', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.namesilo.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/namesilo.png" class="img-circle" width="40">
@@ -1144,9 +1304,11 @@
                         </div>
                     </div>
                 </div>
-			
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.gandi.net/zh-hans', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.gandi.net/zh-hans">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.gandi.net/zh-hans', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.gandi.net/zh-hans">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/gandi.png" class="img-circle" width="40">
@@ -1163,14 +1325,16 @@
 
             </div>
             <!-- 域名注册 End-->
-			
+
             <!-- 域名解析 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="域名解析"></i>域名解析</h4>
 
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.cloudflare.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.cloudflare.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.cloudflare.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.cloudflare.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/cloudflare.png" class="img-circle" width="40">
@@ -1187,14 +1351,16 @@
 
             </div>
             <!-- 域名解析 End-->
-			
+
             <!-- 服务器 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="服务器"></i>服务器</h4>
 
             <div class="row">
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://cloud.tencent.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://cloud.tencent.com">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://cloud.tencent.com', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://cloud.tencent.com">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/tencent-cloud.png" class="img-circle" width="40">
@@ -1208,9 +1374,12 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=l2jlnrba', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://cn.aliyun.com/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=l2jlnrba', '_blank')"
+                        data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="https://cn.aliyun.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/aliyun.png" class="img-circle" width="40">
@@ -1224,9 +1393,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.vultr.com/?ref=7415884', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.vultr.com/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.vultr.com/?ref=7415884', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.vultr.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/vultr.png" class="img-circle" width="40">
@@ -1243,14 +1414,16 @@
 
             </div>
             <!-- 服务器 End-->
-			
+
             <!-- 慕课平台 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="慕课平台"></i>慕课平台</h4>
 
             <div class="row">
-			
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://s.imooc.com/A3YLQBF', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.imooc.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://s.imooc.com/A3YLQBF', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.imooc.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/imooc.png" class="img-circle" width="40">
@@ -1264,9 +1437,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.shiyanlou.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.shiyanlou.com">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.shiyanlou.com', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.shiyanlou.com">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/shiyanlou.png" class="img-circle" width="40">
@@ -1280,9 +1455,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.icourse163.org/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.icourse163.org/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.icourse163.org/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.icourse163.org/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/icourse163.png" class="img-circle" width="40">
@@ -1296,9 +1473,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://cn.udacity.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://cn.udacity.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://cn.udacity.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://cn.udacity.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/udacity.png" class="img-circle" width="40">
@@ -1314,15 +1493,17 @@
                 </div>
 
             </div>
-	        <!-- 慕课平台 End-->
-			
+            <!-- 慕课平台 End-->
+
             <!-- 自学网站 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="自学网站"></i>自学网站</h4>
 
             <div class="row">
-			
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.runoob.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.runoob.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.runoob.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.runoob.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/runoob.png" class="img-circle" width="40">
@@ -1336,9 +1517,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.liaoxuefeng.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.liaoxuefeng.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.liaoxuefeng.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.liaoxuefeng.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/liaoxuefeng.png" class="img-circle" width="40">
@@ -1354,7 +1537,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://how2j.cn?p=108632', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://how2j.cn/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://how2j.cn?p=108632', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://how2j.cn/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/how2j.png" class="img-circle" width="40">
@@ -1370,15 +1555,17 @@
                 </div>
 
             </div>
-	        <!-- 自学网站 End-->
-			
+            <!-- 自学网站 End-->
+
             <!-- 日语学习 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="日语学习"></i>日语学习</h4>
 
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.erin.ne.jp/zh/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.erin.ne.jp/zh/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.erin.ne.jp/zh/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.erin.ne.jp/zh/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/erin.png" class="img-circle" width="40">
@@ -1394,7 +1581,10 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://www.gavo.t.u-tokyo.ac.jp/ojad/chi/pages/home', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.gavo.t.u-tokyo.ac.jp/ojad/chi/pages/home">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://www.gavo.t.u-tokyo.ac.jp/ojad/chi/pages/home', '_blank')"
+                        data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="http://www.gavo.t.u-tokyo.ac.jp/ojad/chi/pages/home">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/ojad.png" class="img-circle" width="40">
@@ -1408,9 +1598,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://res.wokanxing.info/jpgramma/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://res.wokanxing.info/jpgramma/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://res.wokanxing.info/jpgramma/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://res.wokanxing.info/jpgramma/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -1424,9 +1616,11 @@
                         </div>
                     </div>
                 </div>
-				
+
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://lang-8.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://lang-8.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://lang-8.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://lang-8.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/lang-8.png" class="img-circle" width="40">
@@ -1442,7 +1636,7 @@
                 </div>
 
             </div>
-	        <!-- 日语学习 End-->
+            <!-- 日语学习 End-->
 
             <!-- 探索发现 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="探索发现"></i>探索发现</h4>
@@ -1450,7 +1644,9 @@
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://i-remember.fr/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://i-remember.fr/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://i-remember.fr/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://i-remember.fr/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/i-remember.png" class="img-circle" width="40">
@@ -1466,7 +1662,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://weavesilk.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://weavesilk.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://weavesilk.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://weavesilk.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/silk.png" class="img-circle" width="40">
@@ -1482,7 +1680,10 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://sanshiliuxiao.top/el-psy-congroo/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://sanshiliuxiao.top/el-psy-congroo/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://sanshiliuxiao.top/el-psy-congroo/', '_blank')"
+                        data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="https://sanshiliuxiao.top/el-psy-congroo/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -1498,7 +1699,7 @@
                 </div>
 
             </div>
-	        <!-- 探索发现 End-->
+            <!-- 探索发现 End-->
 
             <!-- 网页游戏 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="网页游戏"></i>网页游戏</h4>
@@ -1506,7 +1707,9 @@
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://static.hfi.me/mikutap/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://static.hfi.me/mikutap/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://static.hfi.me/mikutap/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://static.hfi.me/mikutap/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -1522,7 +1725,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://farter.cn/tetr.js/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://farter.cn/tetr.js/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://farter.cn/tetr.js/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://farter.cn/tetr.js/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -1538,15 +1743,17 @@
                 </div>
 
             </div>
-	        <!-- 网页游戏 End-->
-			
+            <!-- 网页游戏 End-->
+
             <!-- 社区论坛 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="社区论坛"></i>社区论坛</h4>
 
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://github.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://github.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://github.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://github.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -1560,9 +1767,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.v2ex.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://www.v2ex.com/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://www.v2ex.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://www.v2ex.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/v2ex.png" class="img-circle" width="40">
@@ -1576,9 +1785,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://zhihu.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://zhihu.com/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://zhihu.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://zhihu.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/zhihu.png" class="img-circle" width="40">
@@ -1592,9 +1803,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://keylol.com', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://keylol.com">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://keylol.com', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://keylol.com">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/keylol.png" class="img-circle" width="40">
@@ -1610,15 +1823,17 @@
                 </div>
 
             </div>
-	        <!-- 社区论坛 End-->
-		
+            <!-- 社区论坛 End-->
+
             <!-- 独立博客 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="独立博客"></i>独立博客</h4>
 
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('http://www.ruanyifeng.com/blog/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="http://www.ruanyifeng.com/blog/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('http://www.ruanyifeng.com/blog/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="http://www.ruanyifeng.com/blog/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/ruanyifeng.png" class="img-circle" width="40">
@@ -1634,7 +1849,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://vinci7.github.io/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://vinci7.github.io/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://vinci7.github.io/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://vinci7.github.io/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/github.png" class="img-circle" width="40">
@@ -1648,9 +1865,11 @@
                         </div>
                     </div>
                 </div>
-				
-				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://51.ruyo.net/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://51.ruyo.net/">
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://51.ruyo.net/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://51.ruyo.net/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/ruyo.png" class="img-circle" width="40">
@@ -1666,7 +1885,7 @@
                 </div>
 
             </div>
-	        <!-- 独立博客 End-->
+            <!-- 独立博客 End-->
 
             <!-- 友情链接 Start-->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="友情链接"></i>友情链接</h4>
@@ -1674,7 +1893,9 @@
             <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://jianrry.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://jianrry.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
@@ -1690,7 +1911,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://im.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://im.jianrry.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://im.jianrry.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://im.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
@@ -1706,7 +1929,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://linux.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://linux.jianrry.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://linux.jianrry.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://linux.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
@@ -1722,7 +1947,9 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://drive.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://drive.jianrry.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://drive.jianrry.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://drive.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
@@ -1738,11 +1965,13 @@
                 </div>
 
             </div>
-			
-			<div class="row">
+
+            <div class="row">
 
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://proxy.jianrry.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="https://proxy.jianrry.com/">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://proxy.jianrry.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://proxy.jianrry.com/">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="assets/images/logos/jianrrys.png" class="img-circle" width="40">
@@ -1758,14 +1987,15 @@
                 </div>
 
             </div>
-	        <!-- 友情链接 End-->
-			
+            <!-- 友情链接 End-->
+
             <!-- Main Footer -->
             <footer class="main-footer sticky footer-type-1">
                 <div class="footer-inner">
                     <div class="footer-text">
                         &copy; 2017-2019
-                        design by <a href="http://viggoz.com" target="_blank"><strong>Viggo</strong></a> modify by <a href="https://jianrry.com" target="_blank"><strong>Jianrry</strong></a>
+                        design by <a href="http://viggoz.com" target="_blank"><strong>Viggo</strong></a> modify by <a
+                            href="https://jianrry.com" target="_blank"><strong>Jianrry</strong></a>
                     </div>
                     <div class="go-up">
                         <a href="#" rel="go-top">
@@ -1774,95 +2004,95 @@
                     </div>
                 </div>
             </footer>
-			
+
         </div>
     </div>
 
     <!-- 锚点平滑移动 -->
     <script type="text/javascript">
-    $(document).ready(function() {
-        $(document).on('click', '.has-sub', function(){
-            var _this = $(this)
-            if(!$(this).hasClass('expanded')) {
-               setTimeout(function(){
-                    _this.find('ul').attr("style","")
-               }, 300);
-              
-            } else {
-                $('.has-sub ul').each(function(id,ele){
-                    var _that = $(this)
-                    if(_this.find('ul')[0] != ele) {
-                        setTimeout(function(){
-                            _that.attr("style","")
-                        }, 300);
-                    }
-                })
-            }
-        })
-        $('.user-info-menu .hidden-sm').click(function(){
-            if($('.sidebar-menu').hasClass('collapsed')) {
-                $('.has-sub.expanded > ul').attr("style","")
-            } else {
-                $('.has-sub.expanded > ul').show()
-            }
-        })
-        $("#main-menu li ul li").click(function() {
-            $(this).siblings('li').removeClass('active'); // 删除其他兄弟元素的样式
-            $(this).addClass('active'); // 添加当前元素的样式
-        });
-        $("a.smooth").click(function(ev) {
-            ev.preventDefault();
+        $(document).ready(function () {
+            $(document).on('click', '.has-sub', function () {
+                var _this = $(this)
+                if (!$(this).hasClass('expanded')) {
+                    setTimeout(function () {
+                        _this.find('ul').attr("style", "")
+                    }, 300);
 
-            public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
-            ps_destroy();
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top - 30
-            }, {
-                duration: 500,
-                easing: "swing"
+                } else {
+                    $('.has-sub ul').each(function (id, ele) {
+                        var _that = $(this)
+                        if (_this.find('ul')[0] != ele) {
+                            setTimeout(function () {
+                                _that.attr("style", "")
+                            }, 300);
+                        }
+                    })
+                }
+            })
+            $('.user-info-menu .hidden-sm').click(function () {
+                if ($('.sidebar-menu').hasClass('collapsed')) {
+                    $('.has-sub.expanded > ul').attr("style", "")
+                } else {
+                    $('.has-sub.expanded > ul').show()
+                }
+            })
+            $("#main-menu li ul li").click(function () {
+                $(this).siblings('li').removeClass('active'); // 删除其他兄弟元素的样式
+                $(this).addClass('active'); // 添加当前元素的样式
             });
-        });
-        return false;
-    });
+            $("a.smooth").click(function (ev) {
+                ev.preventDefault();
 
-    var href = "";
-    var pos = 0;
-    $("a.smooth").click(function(e) {
-        $("#main-menu li").each(function() {
-            $(this).removeClass("active");
+                public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
+                ps_destroy();
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top - 30
+                }, {
+                    duration: 500,
+                    easing: "swing"
+                });
+            });
+            return false;
         });
-        $(this).parent("li").addClass("active");
-        e.preventDefault();
-        href = $(this).attr("href");
-        pos = $(href).position().top - 30;
-    });
+
+        var href = "";
+        var pos = 0;
+        $("a.smooth").click(function (e) {
+            $("#main-menu li").each(function () {
+                $(this).removeClass("active");
+            });
+            $(this).parent("li").addClass("active");
+            e.preventDefault();
+            href = $(this).attr("href");
+            pos = $(href).position().top - 30;
+        });
     </script>
-	
-	<script>
-	WIDGET = {
-	  CONFIG: {
-		"modules": "12034",
-		"background": 5,
-		"tmpColor": "4A4A4A",
-		"tmpSize": 16,
-		"cityColor": "4A4A4A",
-		"citySize": 16,
-		"aqiSize": 16,
-		"weatherIconSize": 24,
-		"alertIconSize": 18,
-		"padding": "10px 10px 10px 10px",
-		"shadow": "1",
-		"language": "auto",
-		"borderRadius": 5,
-		"fixed": "false",
-		"vertical": "middle",
-		"horizontal": "left",
-		"key": "9aa7e906b3534cf78dc28afcfd22fe4c"
-	  }
-	}
+
+    <script>
+        WIDGET = {
+            CONFIG: {
+                "modules": "12034",
+                "background": 5,
+                "tmpColor": "4A4A4A",
+                "tmpSize": 16,
+                "cityColor": "4A4A4A",
+                "citySize": 16,
+                "aqiSize": 16,
+                "weatherIconSize": 24,
+                "alertIconSize": 18,
+                "padding": "10px 10px 10px 10px",
+                "shadow": "1",
+                "language": "auto",
+                "borderRadius": 5,
+                "fixed": "false",
+                "vertical": "middle",
+                "horizontal": "left",
+                "key": "9aa7e906b3534cf78dc28afcfd22fe4c"
+            }
+        }
     </script>
-    
-	<!-- <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script> -->
+
+    <!-- <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script> -->
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>

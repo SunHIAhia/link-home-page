@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="assets/css/xenon-components.css">
     <link rel="stylesheet" href="assets/css/xenon-skins.css">
     <link rel="stylesheet" href="assets/css/nav.css">
-
-    <!-- pwa manifest.json -->
-    <link rel="manifest" href="./manifest.json">
-
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="assets/js/index.js"></script>
 
-    <!-- service worker -->
+    <!-- pwa manifest.json Start -->
+    <link rel="manifest" href="./manifest.json">
+    <!-- pwa manifest.json End -->
+
+    <!-- pwa service worker Start -->
     <script>
         // 判断浏览器是否支持 Service Worker
         if ('serviceWorker' in navigator) {
@@ -41,6 +41,7 @@
             })
         }
     </script>
+    <!-- pwa service worker End -->
 
 
 </head>
@@ -272,7 +273,6 @@
                 </div>
 
             </div>
-
             <!-- 天气预报 End-->
 
             <!-- Research Start-->
@@ -969,6 +969,25 @@
 
                 <div class="col-sm-3">
                     <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/', '_blank')"
+                        data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="assets/images/logos/microsoft.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>Free Virtual Machines</strong>
+                                </a>
+                                <p class="overflowClip_2">免费下载Windows虚拟机镜像。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
                         onclick="window.open('https://mubu.com/', '_blank')" data-toggle="tooltip"
                         data-placement="bottom" title="" data-original-title="https://mubu.com/">
                         <div class="xe-comment-entry">
@@ -980,6 +999,24 @@
                                     <strong>幕布</strong>
                                 </a>
                                 <p class="overflowClip_2">在线思维导图。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info"
+                        onclick="window.open('https://tableconvert.com/', '_blank')" data-toggle="tooltip"
+                        data-placement="bottom" title="" data-original-title="https://tableconvert.com/">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="assets/images/logos/tableconvert.png" class="img-circle" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <a href="#" class="xe-user-name overflowClip_1">
+                                    <strong>Table Convert Online</strong>
+                                </a>
+                                <p class="overflowClip_2">在线转换表格格式。</p>
                             </div>
                         </div>
                     </div>

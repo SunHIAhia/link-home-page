@@ -73,6 +73,7 @@ let filesToCache = [
   '/assets/images/logos/lang-8.png',
   '/assets/images/logos/liaoxuefeng.png',
   '/assets/images/logos/magazinechina.png',
+  '/assets/images/logos/microsoft.png',
   '/assets/images/logos/mozilla.png',
   '/assets/images/logos/mubu.png',
   '/assets/images/logos/mvnrepository.png',
@@ -90,6 +91,7 @@ let filesToCache = [
   '/assets/images/logos/shiyanlou.png',
   '/assets/images/logos/silk.png',
   '/assets/images/logos/squoosh.png',
+  '/assets/images/logos/tableconvert.png',
   '/assets/images/logos/taonpm.png',
   '/assets/images/logos/tencent-cloud.png',
   '/assets/images/logos/tophub.png',
@@ -137,7 +139,7 @@ self.addEventListener('fetch', function (e) {
   if (e.request.url.indexOf(dataUrl) > -1) {
     e.respondWith(
       caches.open(dataCacheName).then(function (cache) {
-        return fetch(e.request).then(function (response){
+        return fetch(e.request).then(function (response) {
           cache.put(e.request.url, response.clone())
           return response
         }).catch(function () {
